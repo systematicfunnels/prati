@@ -101,6 +101,31 @@ pre {
   top: 16px;
 }
 
+.hero-orb-ring {
+  transform: translate(-50%, -50%) rotate(var(--orbit-start)) scale(var(--orbit-scale));
+  animation: hero-orbit var(--orbit-duration) linear infinite;
+}
+
+@keyframes hero-orbit {
+  from {
+    transform: translate(-50%, -50%) rotate(var(--orbit-start)) scale(var(--orbit-scale));
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(calc(var(--orbit-start) + 360deg)) scale(var(--orbit-scale));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-orb-ring {
+    animation: none;
+  }
+}
+
 ::selection {
   background: rgba(34, 211, 238, 0.22);
 }

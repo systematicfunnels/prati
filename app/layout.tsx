@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Heebo } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const heebo = Heebo({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800"],
+const heebo = localFont({
+  src: "./fonts/HeeboLatin.woff2",
+  weight: "400 800",
+  display: "swap",
   variable: "--font-heebo",
 });
 
@@ -17,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/fevicon.png",
-    shortcut: "/fevicon.png",
-    apple: "/fevicon.png",
+    icon: [{ url: "/favicon-32.png", sizes: "32x32", type: "image/png" }, { url: "/icon.png", sizes: "64x64", type: "image/png" }],
+    shortcut: "/favicon-32.png",
+    apple: "/apple-touch-icon.png",
   },
   keywords: [
     "AI-native digital twin platform",
