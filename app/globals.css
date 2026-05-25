@@ -1,5 +1,43 @@
 @import "tailwindcss";
 
+:root {
+  --color-page-bg: #f5f5f1;
+  --color-surface-base: #08111f;
+  --color-surface-raised: #0e1728;
+  --color-surface-overlay: rgba(255, 255, 255, 0.06);
+  --color-surface-glass: rgba(148, 163, 184, 0.1);
+  --color-surface-inverse: #ffffff;
+
+  --color-border-soft: rgba(15, 23, 42, 0.08);
+  --color-border-strong: rgba(15, 23, 42, 0.18);
+  --color-border-focus: #38bdf8;
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: rgba(248, 250, 252, 0.72);
+  --color-text-tertiary: rgba(248, 250, 252, 0.48);
+  --color-text-inverse: #0f172a;
+
+  --color-primary-400: #22d3ee;
+  --color-primary-500: #06b6d4;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  --font-sans: var(--font-heebo), "Helvetica Neue", "Arial Nova", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --tracking-hero: -0.08em;
+  --tracking-heading: -0.05em;
+
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 30px;
+
+  --shadow-panel: 0 30px 120px rgba(4, 12, 32, 0.35);
+  --layout-max-app: 1440px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,9 +49,9 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #e8e8e5;
-  color: #111111;
-  font-family: "Helvetica Neue", "Arial Nova", "Segoe UI", sans-serif;
+  background: var(--color-page-bg);
+  color: var(--color-text-inverse);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,4 +66,41 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+input,
+textarea,
+select,
+button {
+  letter-spacing: inherit;
+}
+
+code,
+pre {
+  font-family: var(--font-mono);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(56, 189, 248, 0.32);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 60;
+  border-radius: 999px;
+  background: #08111f;
+  color: #f8fafc;
+  padding: 10px 16px;
+  transition: top 120ms ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.22);
 }
