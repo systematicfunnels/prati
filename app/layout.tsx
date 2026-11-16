@@ -11,9 +11,9 @@ const heebo = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.prati.ai"),
-  title: "AI-Native Multi-Tenant Digital Twin Platform | PRATI AI",
+  title: "Prati AI | Predictive Operations for Every Plant",
   description:
-    "PRATI AI is an AI-native, multi-tenant digital twin and operational intelligence platform for manufacturing, drone operations, habitats, infrastructure, energy, logistics, healthcare, mining, and aerospace environments.",
+    "Connect your existing factory floor to one simple dashboard. Spot machine failures before they happen, cut wasted energy, and make better decisions with Prati AI.",
   alternates: {
     canonical: "/",
   },
@@ -23,36 +23,29 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   keywords: [
-    "AI-native digital twin platform",
-    "industrial digital twin platform",
-    "multi-tenant digital twin platform",
-    "operational intelligence platform",
-    "private pilot digital twin platform",
-    "digital twin SaaS",
-    "industrial digital twin",
-    "digital twin platform for manufacturing",
-    "digital twin platform for facilities",
-    "digital twin platform for industrial infrastructure",
-    "MQTT telemetry platform",
-    "plugin-first architecture",
-    "real-time telemetry dashboards",
-    "anomaly detection platform",
-    "industrial AI platform",
-    "smart facility digital twin",
+    "predictive maintenance",
+    "industrial operations",
+    "factory monitoring",
+    "machine health monitoring",
+    "reduce unplanned downtime",
+    "industrial AI",
+    "energy monitoring",
+    "MQTT",
+    "Modbus",
   ],
   openGraph: {
-    title: "AI-Native Multi-Tenant Digital Twin Platform | PRATI AI",
+    title: "Prati AI | Predictive Operations for Every Plant",
     description:
-      "An AI-native, multi-tenant digital twin platform configurable through schemas, templates, plugins, industry packs, and APIs.",
+      "Connect your existing factory floor to one simple dashboard. Spot machine failures early and cut wasted energy.",
     type: "website",
     url: "https://www.prati.ai/",
     siteName: "PRATI AI",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI-Native Multi-Tenant Digital Twin Platform | PRATI AI",
+    title: "Prati AI | Predictive Operations for Every Plant",
     description:
-      "An AI-native, multi-tenant digital twin platform for complex physical environments.",
+      "Spot machine failures before they happen, cut wasted energy, and make better decisions with Prati AI.",
   },
 };
 

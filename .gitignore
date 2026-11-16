@@ -3,3 +3,7 @@ node_modules
 npm-debug.log*
 next-dev.log
 next-dev.err.log
+.chrome-perf-profile/
+.chrome-perf-profile-audit/
+.lighthouse-report*.json
+*.tsbuildinfo
